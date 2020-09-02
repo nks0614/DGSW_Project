@@ -1,0 +1,3 @@
+include ':SimpleCode'
+include ':app'
+rootProject.name = "School_Project"

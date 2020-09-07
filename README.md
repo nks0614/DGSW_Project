@@ -43,8 +43,8 @@ simToastLong("TEXT") // duration is Toast.LENGTH_LONG
 ```
 
 ### P.s
-This is Just Study and School Project.
-If you want to use this library, you can use it.
-But quality and stability can't be guaranteed.
+This is Just Study and School Project. <br>
+If you want to use this library, you can use it. <br>
+But quality and stability can't be guaranteed. <br>
 
 Thank you

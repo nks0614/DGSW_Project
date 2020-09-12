@@ -20,7 +20,7 @@ Add it in your app build.gradle at dependencies
 
 ```
 dependencies {
-    implementation 'com.github.nks0614:DGSW_Project:1.1.1'
+    implementation 'com.github.nks0614:DGSW_Project:1.2.0'
 }
 ```
 

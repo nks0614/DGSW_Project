@@ -29,9 +29,9 @@ dependencies {
 Intent Activity Code
 
 ```kotlin
-simIntent(MainActivity::class.java) //if you back, app finish
+simIntent(MainActivity::class.java) // if you back, app finish
 
-simIntentNoFinish(MainActivity::class.java) //if you back, go first stack Activity
+simIntentNoFinish(MainActivity::class.java) // if you back, go first stack Activity
 ```
 
 Toast Activity Code
@@ -40,6 +40,12 @@ Toast Activity Code
 simToastShort("TEXT") // duration is Toast.LENGTH_SHORT
 
 simToastLong("TEXT") // duration is Toast.LENGTH_LONG
+```
+
+DateFormat Code
+
+```kotlin
+simDateFormatNow("yyyy-MM-dd") // write format that you want
 ```
 
 ### P.s

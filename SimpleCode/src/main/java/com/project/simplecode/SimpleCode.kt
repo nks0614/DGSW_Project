@@ -3,6 +3,7 @@ package com.project.simplecode
 import android.content.Intent
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import java.lang.NumberFormatException
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -27,13 +28,22 @@ fun AppCompatActivity.simToastLong(text: String) {
     Toast.makeText(applicationContext, text, android.widget.Toast.LENGTH_LONG).show()
 }
 
-fun AppCompatActivity.simDateFormatNow(format : String) : String {
+fun simDateFormatNow(format : String) : String {
     var now : Long = System.currentTimeMillis()
     var date : Date = Date(now)
     var dateFormat : SimpleDateFormat = SimpleDateFormat(format)
     var getTime : String = dateFormat.format(date)
 
     return getTime
+}
+
+fun simStringDigit(text : String) : Boolean {
+    try{
+        var i : Int = text.toInt()
+    }catch (e : NumberFormatException){
+        return false
+    }
+    return true
 }
 
 

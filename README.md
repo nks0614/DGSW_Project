@@ -22,7 +22,7 @@ Add it in your app build.gradle at dependencies
 
 ```
 dependencies {
-    implementation 'com.github.nks0614:DGSW_Project:1.2.0'
+    implementation 'com.github.nks0614:DGSW_Project:1.4.0'
 }
 ```
 
@@ -31,30 +31,54 @@ dependencies {
 Intent Activity Code
 
 ```kotlin
-simIntent(MainActivity::class.java) // if you back, app finish
+spaIntent(MoveActivity::class.java)
 
-simIntentNoFinish(MainActivity::class.java) // if you back, go first stack Activity
+spaIntentNoFin(MoveActivity::class.java) // no finish()
+```
+
+Intent Fragment Code
+```kotlin
+spfIntent(MoveActivity::class.java)
+
+spfIntentNoFin(MoveActivity::class.java) // no finish()
 ```
 
 Toast Activity Code
 
 ```kotlin
-simToastShort("TEXT") // duration is Toast.LENGTH_SHORT
+spaToastShort("TEXT") // duration is Toast.LENGTH_SHORT
 
-simToastLong("TEXT") // duration is Toast.LENGTH_LONG
+spaToastLong("TEXT") // duration is Toast.LENGTH_LONG
+```
+
+Toast Fragment Code
+
+```kotlin
+spfToastShort("TEXT") // duration is Toast.LENGTH_SHORT
+
+spfToastLong("TEXT") // duration is Toast.LENGTH_LONG
 ```
 
 DateFormat Code
 
 ```kotlin
-simDateFormatNow("yyyy-MM-dd") // write format that you want
+spDateFormatNow("yyyy-MM-dd") // write format that you want
 ```
+return type : String
 
 String Check digit Code
 
 ```kotlin
-simStringDigit("TEXT") // Check number in a String
+spStringDigit("TEXT") // Check number in a String
 ```
+return type : Boolean
+
+String Concat Code
+
+```kotlin
+spStringConcat("t", "e", "x", "t") //Any number of arguments possible
+```
+return type : String
 
 ### P.s
 This is Just Study and School Project. <br>

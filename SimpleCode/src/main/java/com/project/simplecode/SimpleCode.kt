@@ -3,32 +3,55 @@ package com.project.simplecode
 import android.content.Intent
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import java.lang.NumberFormatException
 import java.text.SimpleDateFormat
 import java.util.*
 
-fun AppCompatActivity.simIntent(activity: Class<*>) {
-    val intent = Intent(this, activity)
-    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
-    startActivity(intent)
+//sp = SimpleCode 줄임말
+//a = Activity, f = Fragment
+//그냥 함수는 따로 X
+
+//Activity
+fun AppCompatActivity.spaIntent(activity: Class<*>) {
+    startActivity(Intent(this, activity).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
     finish()
 }
 
-fun AppCompatActivity.simIntentNoFinish(activity: Class<*>) {
-    val intent = Intent(this, activity)
-    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
-    startActivity(intent)
+fun AppCompatActivity.spaIntentNoFin(activity: Class<*>) {
+    startActivity(Intent(this, activity).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
 }
 
-fun AppCompatActivity.simToastShort(text: String) {
+fun AppCompatActivity.spaToastShort(text: String) {
     Toast.makeText(applicationContext, text, android.widget.Toast.LENGTH_SHORT).show()
 }
 
-fun AppCompatActivity.simToastLong(text: String) {
+fun AppCompatActivity.spaToastLong(text: String) {
     Toast.makeText(applicationContext, text, android.widget.Toast.LENGTH_LONG).show()
 }
 
-fun simDateFormatNow(format : String) : String {
+
+//Fragment
+fun Fragment.spfIntent(moveActivity: Class<*>) {
+    startActivity(Intent(context!!.applicationContext, moveActivity).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+    activity!!.finish()
+}
+
+fun Fragment.spfIntentNoFin(moveActivity: Class<*>) {
+    startActivity(Intent(context!!.applicationContext, moveActivity).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+}
+
+fun Fragment.spfToastShort(message: String?) {
+    Toast.makeText(context!!.applicationContext, message, Toast.LENGTH_SHORT).show()
+}
+
+fun Fragment.spfToastLong(message: String?) {
+    Toast.makeText(context!!.applicationContext, message, Toast.LENGTH_LONG).show()
+}
+
+
+//Function
+fun spDateFormatNow(format : String) : String {
     var now : Long = System.currentTimeMillis()
     var date : Date = Date(now)
     var dateFormat : SimpleDateFormat = SimpleDateFormat(format)
@@ -37,13 +60,21 @@ fun simDateFormatNow(format : String) : String {
     return getTime
 }
 
-fun simStringDigit(text : String) : Boolean {
+fun spStringDigit(text : String) : Boolean {
     try{
         var i : Int = text.toInt()
     }catch (e : NumberFormatException){
         return false
     }
     return true
+}
+
+fun spStringConcat(vararg text:String) : String{
+    var result : String = ""
+    for(s in text){
+        result += s
+    }
+    return result
 }
 
 

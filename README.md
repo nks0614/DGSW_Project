@@ -28,7 +28,7 @@ dependencies {
 
 ### Use
 
-Intent Activity Code
+<b>Intent Activity Code</b>
 
 ```kotlin
 spaIntent(MoveActivity::class.java)
@@ -36,14 +36,14 @@ spaIntent(MoveActivity::class.java)
 spaIntentNoFin(MoveActivity::class.java) // no finish()
 ```
 
-Intent Fragment Code
+<b>Intent Fragment Code</b>
 ```kotlin
 spfIntent(MoveActivity::class.java)
 
 spfIntentNoFin(MoveActivity::class.java) // no finish()
 ```
 
-Toast Activity Code
+<b>Toast Activity Code</b>
 
 ```kotlin
 spaToastShort("TEXT") // duration is Toast.LENGTH_SHORT
@@ -51,7 +51,7 @@ spaToastShort("TEXT") // duration is Toast.LENGTH_SHORT
 spaToastLong("TEXT") // duration is Toast.LENGTH_LONG
 ```
 
-Toast Fragment Code
+<b>Toast Fragment Code</b>
 
 ```kotlin
 spfToastShort("TEXT") // duration is Toast.LENGTH_SHORT
@@ -59,21 +59,21 @@ spfToastShort("TEXT") // duration is Toast.LENGTH_SHORT
 spfToastLong("TEXT") // duration is Toast.LENGTH_LONG
 ```
 
-DateFormat Code
+<b>DateFormat Code</b>
 
 ```kotlin
 spDateFormatNow("yyyy-MM-dd") // write format that you want
 ```
 return type : String
 
-String Check digit Code
+<b>String Check digit Code</b>
 
 ```kotlin
 spStringDigit("TEXT") // Check number in a String
 ```
 return type : Boolean
 
-String Concat Code
+<b>String Concat Code</b>
 
 ```kotlin
 spStringConcat("t", "e", "x", "t") //Any number of arguments possible

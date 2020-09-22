@@ -50,6 +50,12 @@ DateFormat Code
 simDateFormatNow("yyyy-MM-dd") // write format that you want
 ```
 
+String Check digit Code
+
+```kotlin
+simStringDigit("TEXT") // Check number in a String
+```
+
 ### P.s
 This is Just Study and School Project. <br>
 If you want to use this library, you can use it. <br>

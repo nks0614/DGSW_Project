@@ -72,7 +72,7 @@ spDateFormatNow("yyyy-MM-dd", 0) // write format that you want and want day num
 // -1 = yesterday
 // System standard
 ```
-parameter type : String, Int
+parameter type : String, Int <br>
 return type : String
 
 <b>String Check digit Code</b>
@@ -80,7 +80,7 @@ return type : String
 ```kotlin
 spStringDigit("TEXT") // Check number in a String
 ```
-parameter type : String
+parameter type : String <br>
 return type : Boolean
 
 <b>String Concat Code</b>
@@ -88,7 +88,7 @@ return type : Boolean
 ```kotlin
 spStringConcat("t", "e", "x", "t") //Any number of arguments possible
 ```
-parameter type : String
+parameter type : String<br>
 return type : String
 
 ### P.s

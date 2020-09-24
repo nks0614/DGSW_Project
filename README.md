@@ -66,7 +66,7 @@ parameter type : String
 <b>DateFormat Code</b>
 
 ```kotlin
-spDateFormatNow("yyyy-MM-dd", 0) // write format that you want and want day num
+spDateFormat("yyyy-MM-dd", 0) // write format that you want and want day num
 // 0 = todoay
 // 1 = tomorrow
 // -1 = yesterday

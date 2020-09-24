@@ -51,9 +51,11 @@ fun Fragment.spfToastLong(message: String?) {
 
 
 //Function
-fun spDateFormatNow(format : String) : String {
-    var now : Long = System.currentTimeMillis()
-    var date : Date = Date(now)
+fun spDateFormatNow(format : String, num : Int) : String {
+    var cal : Calendar = GregorianCalendar()
+    cal.add(Calendar.DATE, num)
+
+    var date : Date = cal.time
     var dateFormat : SimpleDateFormat = SimpleDateFormat(format)
     var getTime : String = dateFormat.format(date)
 

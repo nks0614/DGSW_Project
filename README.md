@@ -35,6 +35,7 @@ spaIntent(MoveActivity::class.java)
 
 spaIntentNoFin(MoveActivity::class.java) // no finish()
 ```
+parameter type : Activity
 
 <b>Intent Fragment Code</b>
 ```kotlin
@@ -42,6 +43,7 @@ spfIntent(MoveActivity::class.java)
 
 spfIntentNoFin(MoveActivity::class.java) // no finish()
 ```
+parameter type : Activity
 
 <b>Toast Activity Code</b>
 
@@ -50,6 +52,7 @@ spaToastShort("TEXT") // duration is Toast.LENGTH_SHORT
 
 spaToastLong("TEXT") // duration is Toast.LENGTH_LONG
 ```
+parameter type : String
 
 <b>Toast Fragment Code</b>
 
@@ -58,12 +61,18 @@ spfToastShort("TEXT") // duration is Toast.LENGTH_SHORT
 
 spfToastLong("TEXT") // duration is Toast.LENGTH_LONG
 ```
+parameter type : String
 
 <b>DateFormat Code</b>
 
 ```kotlin
-spDateFormatNow("yyyy-MM-dd") // write format that you want
+spDateFormatNow("yyyy-MM-dd", 0) // write format that you want and want day num
+// 0 = todoay
+// 1 = tomorrow
+// -1 = yesterday
+// System standard
 ```
+parameter type : String, Int
 return type : String
 
 <b>String Check digit Code</b>
@@ -71,6 +80,7 @@ return type : String
 ```kotlin
 spStringDigit("TEXT") // Check number in a String
 ```
+parameter type : String
 return type : Boolean
 
 <b>String Concat Code</b>
@@ -78,6 +88,7 @@ return type : Boolean
 ```kotlin
 spStringConcat("t", "e", "x", "t") //Any number of arguments possible
 ```
+parameter type : String
 return type : String
 
 ### P.s

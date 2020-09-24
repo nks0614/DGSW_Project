@@ -51,7 +51,7 @@ fun Fragment.spfToastLong(message: String?) {
 
 
 //Function
-fun spDateFormatNow(format : String, num : Int) : String {
+fun spDateForma(format : String, num : Int) : String {
     var cal : Calendar = GregorianCalendar()
     cal.add(Calendar.DATE, num)
 

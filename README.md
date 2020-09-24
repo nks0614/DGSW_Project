@@ -22,39 +22,63 @@ Add it in your app build.gradle at dependencies
 
 ```
 dependencies {
-    implementation 'com.github.nks0614:DGSW_Project:1.2.0'
+    implementation 'com.github.nks0614:DGSW_Project:1.4.0'
 }
 ```
 
 ### Use
 
-Intent Activity Code
+<b>Intent Activity Code</b>
 
 ```kotlin
-simIntent(MainActivity::class.java) // if you back, app finish
+spaIntent(MoveActivity::class.java)
 
-simIntentNoFinish(MainActivity::class.java) // if you back, go first stack Activity
+spaIntentNoFin(MoveActivity::class.java) // no finish()
 ```
 
-Toast Activity Code
+<b>Intent Fragment Code</b>
+```kotlin
+spfIntent(MoveActivity::class.java)
+
+spfIntentNoFin(MoveActivity::class.java) // no finish()
+```
+
+<b>Toast Activity Code</b>
 
 ```kotlin
-simToastShort("TEXT") // duration is Toast.LENGTH_SHORT
+spaToastShort("TEXT") // duration is Toast.LENGTH_SHORT
 
-simToastLong("TEXT") // duration is Toast.LENGTH_LONG
+spaToastLong("TEXT") // duration is Toast.LENGTH_LONG
 ```
 
-DateFormat Code
+<b>Toast Fragment Code</b>
 
 ```kotlin
-simDateFormatNow("yyyy-MM-dd") // write format that you want
+spfToastShort("TEXT") // duration is Toast.LENGTH_SHORT
+
+spfToastLong("TEXT") // duration is Toast.LENGTH_LONG
 ```
 
-String Check digit Code
+<b>DateFormat Code</b>
 
 ```kotlin
-simStringDigit("TEXT") // Check number in a String
+spDateFormatNow("yyyy-MM-dd") // write format that you want
 ```
+return type : String
+
+<b>String Check digit Code</b>
+
+```kotlin
+spStringDigit("TEXT") // Check number in a String
+```
+return type : Boolean
+
+<b>String Concat Code</b>
+
+```kotlin
+spStringConcat("t", "e", "x", "t") //Any number of arguments possible
+```
+return type : String
 
 ### P.s
 This is Just Study and School Project. <br>

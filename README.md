@@ -2,7 +2,8 @@
 
 ##### Just Kotlin!!!
 
-This library simplifies code that is a must-have but annoying to write down.
+This library is simplifies code that is a must-have but annoying to write down.
+(It's my story too lolol)
 
 ### Download
 

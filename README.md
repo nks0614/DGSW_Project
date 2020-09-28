@@ -3,7 +3,6 @@
 ##### Just Kotlin!!!
 
 This library is simplifies code that is a must-have but annoying to write down.
-(It's my story too lolol)
 
 ### Download
 
@@ -89,12 +88,14 @@ return type : Boolean
 ```kotlin
 spStringConcat("t", "e", "x", "t") //Any number of arguments possible
 ```
-parameter type : String<br>
+parameter type : String <br>
 return type : String
 
 ### P.s
 This is Just Study and School Project. <br>
 If you want to use this library, you can use it. <br>
 But quality and stability can't be guaranteed. <br>
+
+If you want to report bug and anything send mail - namgyeseok0614@naver.com - here please.
 
 Thank you

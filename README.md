@@ -22,7 +22,7 @@ Add it in your app build.gradle at dependencies
 
 ```
 dependencies {
-    implementation 'com.github.nks0614:DGSW_Project:1.5.2'
+    implementation 'com.github.nks0614:DGSW_Project:1.6.1'
 }
 ```
 
@@ -67,10 +67,10 @@ parameter type : String
 
 ```kotlin
 spDateFormat("yyyy-MM-dd", 0) // write format that you want and want day num
-// 0 = todoay
-// 1 = tomorrow
-// -1 = yesterday
-// System standard
+                              // 0 = todoay
+                              // 1 = tomorrow
+                              // -1 = yesterday
+                              // System standard
 ```
 parameter type : String, Int <br>
 return type : String
@@ -86,10 +86,38 @@ return type : Boolean
 <b>String Concat Code</b>
 
 ```kotlin
-spStringConcat("t", "e", "x", "t") //Any number of arguments possible
+spStringConcat("t", "e", "x", "t") // Any number of arguments possible
 ```
 parameter type : String <br>
 return type : String
+
+<b>Random Gerenate Code</b>
+
+```kotlin
+spRandom(1, 10) // start num and end num
+```
+parameter type : Int <br>
+return type : Int
+
+<b>Average Code</b>
+
+```kotlin
+// Any number of arguments possible
+spAverage(1, 2, 3 ,4) // only Int
+spAverage(10.5, 2.3, 4.5, 11.3) // only Double 
+```
+parameter type : Int or Double (Only one of them in one function)<br>
+return type : Double
+
+<b>String Similarity Code</b>
+
+```kotlin
+spStringSimilarity("abc", "abd") // Compares two Strings and gives String similarity
+                                 // Use Levenshtein Distance
+                                 // A long string is the criterion                               
+```
+parameter type : String
+return type : Double
 
 ### P.s
 This is Just Study and School Project. <br>

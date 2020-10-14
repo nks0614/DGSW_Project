@@ -27,8 +27,9 @@ dependencies {
 ```
 
 ### Use
+
 #### Activity
-<hr>
+
 <b>Intent Activity Code</b>
 
 ```kotlin
@@ -47,8 +48,8 @@ spaToastLong("TEXT") // duration is Toast.LENGTH_LONG
 ```
 parameter type : String
 
+
 #### Fragment
-<hr>
 
 <b>Intent Fragment Code</b>
 ```kotlin
@@ -67,8 +68,8 @@ spfToastLong("TEXT") // duration is Toast.LENGTH_LONG
 ```
 parameter type : String
 
+
 #### Function
-<hr>
 
 <b>DateFormat Code</b>
 
@@ -128,8 +129,9 @@ spStringSimilarity("abc", "abd") // Compares two Strings and gives String simila
 parameter type : String
 return type : Double
 
+
 ### P.s
-<hr>
+
 This is Just Study and School Project. <br>
 If you want to use this library, you can use it. <br>
 But quality and stability can't be guaranteed. <br>

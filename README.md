@@ -27,21 +27,14 @@ dependencies {
 ```
 
 ### Use
-
+#### Activity
+<hr>
 <b>Intent Activity Code</b>
 
 ```kotlin
 spaIntent(MoveActivity::class.java)
 
 spaIntentNoFin(MoveActivity::class.java) // no finish()
-```
-parameter type : Activity
-
-<b>Intent Fragment Code</b>
-```kotlin
-spfIntent(MoveActivity::class.java)
-
-spfIntentNoFin(MoveActivity::class.java) // no finish()
 ```
 parameter type : Activity
 
@@ -54,6 +47,17 @@ spaToastLong("TEXT") // duration is Toast.LENGTH_LONG
 ```
 parameter type : String
 
+#### Fragment
+<hr>
+
+<b>Intent Fragment Code</b>
+```kotlin
+spfIntent(MoveActivity::class.java)
+
+spfIntentNoFin(MoveActivity::class.java) // no finish()
+```
+parameter type : Activity
+
 <b>Toast Fragment Code</b>
 
 ```kotlin
@@ -62,6 +66,9 @@ spfToastShort("TEXT") // duration is Toast.LENGTH_SHORT
 spfToastLong("TEXT") // duration is Toast.LENGTH_LONG
 ```
 parameter type : String
+
+#### Function
+<hr>
 
 <b>DateFormat Code</b>
 
@@ -79,6 +86,8 @@ return type : String
 
 ```kotlin
 spStringDigit("TEXT") // Check number in a String
+                      // If String has number, return false
+                      // not has true
 ```
 parameter type : String <br>
 return type : Boolean
@@ -120,6 +129,7 @@ parameter type : String
 return type : Double
 
 ### P.s
+<hr>
 This is Just Study and School Project. <br>
 If you want to use this library, you can use it. <br>
 But quality and stability can't be guaranteed. <br>

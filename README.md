@@ -4,7 +4,7 @@
 
 This library is simplifies code that is a must-have but annoying to write down.
 
-### Download
+## Download
 
 Add it in your root build.gradle at repositories
 
@@ -26,9 +26,9 @@ dependencies {
 }
 ```
 
-### Use
+## Use
 
-#### Activity
+### Activity
 
 <b>Intent Activity Code</b>
 
@@ -49,7 +49,7 @@ spaToastLong("TEXT") // duration is Toast.LENGTH_LONG
 parameter type : String
 
 
-#### Fragment
+### Fragment
 
 <b>Intent Fragment Code</b>
 ```kotlin
@@ -69,7 +69,7 @@ spfToastLong("TEXT") // duration is Toast.LENGTH_LONG
 parameter type : String
 
 
-#### Function
+### Function
 
 <b>DateFormat Code</b>
 

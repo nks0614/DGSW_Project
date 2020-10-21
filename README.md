@@ -18,11 +18,11 @@ allprojects {
 }
 ```
 
-Add it in your app build.gradle at dependencies
-
+Add it in your app build.gradle at dependencies<br>
+[![](https://jitpack.io/v/nks0614/DGSW_Project.svg)](https://jitpack.io/#nks0614/DGSW_Project)
 ```
 dependencies {
-    implementation 'com.github.nks0614:DGSW_Project:1.6.1'
+    implementation 'com.github.nks0614:DGSW_Project:[VERSION]'
 }
 ```
 

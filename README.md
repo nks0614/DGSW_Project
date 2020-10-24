@@ -130,6 +130,11 @@ parameter type : String
 return type : Double
 
 
+### PLAN
+
+Support JAVA & Add Many 
+
+
 ### P.s
 
 This is Just Study and School Project. <br>

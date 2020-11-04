@@ -96,7 +96,7 @@ return type : Boolean
 <b>String Concat Code</b>
 
 ```kotlin
-spStringConcat("t", "e", "x", "t") // Any number of arguments possible
+spStringConcat("t", "e", "x", "t") // variable factor
 ```
 parameter type : String <br>
 return type : String
@@ -112,8 +112,8 @@ return type : Int
 <b>Average Code</b>
 
 ```kotlin
-// Any number of arguments possible
-spAverage(1, 2, 3 ,4) // only Int
+// variable factor
+spAverage(1, 2, 3, 4) // only Int
 spAverage(10.5, 2.3, 4.5, 11.3) // only Double 
 ```
 parameter type : Int or Double (Only one of them in one function)<br>
@@ -128,6 +128,15 @@ spStringSimilarity("abc", "abd") // Compares two Strings and gives String simila
 ```
 parameter type : String
 return type : Double
+
+<b>Check String Empty</b>
+
+```kotlin
+spCheckEmpty("a", "b", "c") // variable factor
+                            // If parameter is Null or Empty(Include Blank), return false
+```
+parameter type : String
+return type : Boolean
 
 
 ### PLAN

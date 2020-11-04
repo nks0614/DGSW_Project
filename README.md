@@ -126,7 +126,7 @@ spStringSimilarity("abc", "abd") // Compares two Strings and gives String simila
                                  // Use Levenshtein Distance
                                  // A long string is the criterion                               
 ```
-parameter type : String
+parameter type : String<br>
 return type : Double
 
 <b>Check String Empty</b>
@@ -135,7 +135,7 @@ return type : Double
 spCheckEmpty("a", "b", "c") // variable factor
                             // If parameter is Null or Empty(Include Blank), return false
 ```
-parameter type : String
+parameter type : String<br>
 return type : Boolean
 
 

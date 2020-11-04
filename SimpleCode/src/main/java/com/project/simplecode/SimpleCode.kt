@@ -94,7 +94,7 @@ fun spRandom(start: Int, end: Int): Int {
 }
 
 fun spAverage(vararg num: Double): Double {
-    var result : Double = 0.0;
+    var result: Double = 0.0;
     for (i in num) {
         result += i
     }
@@ -105,7 +105,7 @@ fun spAverage(vararg num: Double): Double {
 }
 
 fun spAverage(vararg num: Int): Double {
-    var result : Double = 0.0;
+    var result: Double = 0.0;
     for (i in num) {
         result += i
     }
@@ -152,5 +152,15 @@ fun spStringSimilarity(s1: String, s2: String): Double {
 
     return (s2.length - cost[longStrLen - 1]) / s2.length.toDouble() * 100
 }
+
+fun spCheckEmpty(vararg text:String) : Boolean{
+    for(i in text){
+        if(i.isNullOrBlank()){
+            return false
+        }
+    }
+    return true
+}
+
 
 

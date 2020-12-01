@@ -165,7 +165,7 @@ fun spCheckEmpty(vararg text:String) : Boolean{
 fun spUnixTimeToDateTime(time : Long, format: String, timeZone : String) : String{
     val date : Date = Date(time)
     val sdf : SimpleDateFormat = SimpleDateFormat(format)
-    sdf.timeZone = TimeZone.getTimeZone("GMT+9")
+    sdf.timeZone = TimeZone.getTimeZone(timeZone)
     return sdf.format(date)
 }
 

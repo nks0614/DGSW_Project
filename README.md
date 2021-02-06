@@ -142,7 +142,6 @@ return type : Boolean
 ### P.s
 
 This is Just Study and School Project. <br>
-If you want to use this library, you can use it. <br>
 But quality and stability can't be guaranteed. <br>
 
 If you want to report bug and anything send mail - namgyeseok0614@naver.com - here please.

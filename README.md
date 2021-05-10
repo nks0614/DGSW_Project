@@ -101,7 +101,7 @@ spStringConcat("t", "e", "x", "t") // variable factor
 parameter type : String <br>
 return type : String
 
-<b>Random Gerenate Code</b>
+<b>Random Generate Code</b>
 
 ```kotlin
 spRandom(1, 10) // start num and end num
